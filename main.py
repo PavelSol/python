@@ -1,8 +1,15 @@
-lst = []
-for i in input().split():
-    lst1 = input().split()
-    for i in range(len(lst1)):
-        thr[i] = int(lst1[i])
-    lst.append(lst1)
-    if input() == "end":
-        print(lst)
+mat = []
+lst = input().split()
+lengthi = len(lst)
+mat.append(lst)
+b = []
+cl = 1
+while cl == 1:
+    b = input().split()
+    if b[0] != "end":
+        mat.append(b)
+        print(mat)
+    else:
+        break
+lengthj = len(mat)
+print(lengthi, lengthj, sep = '\t')
