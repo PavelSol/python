@@ -8,8 +8,9 @@ while cl == 1:
     b = input().split()
     if b[0] != "end":
         mat.append(b)
-        print(mat)
     else:
         break
 lengthj = len(mat)
-print(lengthi, lengthj, sep = '\t')
+for i in range(0, lengthj):
+    print(*mat[i])
+
